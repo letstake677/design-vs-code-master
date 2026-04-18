@@ -21,9 +21,9 @@ export default function App() {
   };
 
   return (
-    <div className="w-full h-screen bg-[#050014] relative overflow-hidden font-sans text-white">
+    <div className="w-full h-[100dvh] bg-[#050014] relative overflow-hidden font-sans text-white fixed inset-0">
       {/* Background Image */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="absolute inset-0 z-0 pointer-events-none">
         <img 
           src="https://i.ibb.co/wFY8CGcr/IMG-20260418-113340.jpg" 
           alt="Background"
@@ -33,7 +33,7 @@ export default function App() {
       </div>
 
       {/* Content wrapper - Fixed height with extreme tight flex to fit one screen */}
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-between h-screen pt-[0.5vh] pb-[1.5vh] px-[2vw] md:px-[4vw]">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-between h-[100dvh] pt-[0.5dvh] pb-[1.5dvh] px-[2vw] md:px-[4vw]">
         
         {/* Navbar */}
         <nav className="flex items-center justify-between w-full h-[6dvh] md:h-[5vh]">
