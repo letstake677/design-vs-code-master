@@ -35,46 +35,49 @@ export default function App() {
       {/* Content wrapper - Fixed height with extreme tight flex to fit one screen */}
       <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-between h-[100dvh] pt-[1vh] pb-[2vh] px-[2vw] md:px-[4vw]">
         
-        {/* Navbar */}
-        <nav className="flex items-center justify-between w-full h-[6dvh] md:h-[5vh]">
-          <button onClick={() => window.location.reload()} className="font-mono text-[#00f0ff] font-black italic text-[2.8vw] md:text-[18px] tracking-widest drop-shadow-[0_0_8px_rgba(0,240,255,0.8)] whitespace-nowrap hover:scale-105 transition-transform cursor-pointer bg-transparent border-none">
-            &lt;CODE MASTER&gt;
-          </button>
-          {/* Nav Links preserved but shrunk on mobile to keep layout identical */}
-          <div className="flex items-center space-x-[2vw] md:space-x-[40px] text-[1.8vw] md:text-[16px] font-medium text-gray-100 whitespace-nowrap">
-            <button onClick={() => window.location.reload()} className="hover:text-[#00f0ff] transition-colors cursor-pointer bg-transparent border-none">Home</button>
-            <a href="https://www.codecademy.com/coaching" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">Courses</a>
-            <a href="https://www.getverse.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">About</a>
-            <a href="https://t.me/GetVerse/486213" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">Contact</a>
-          </div>
-          <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="border-[1.5px] md:border-[2px] border-[#00f0ff] text-[#00f0ff] px-[2.5vw] md:px-[24px] py-[0.6dvh] md:py-[8px] text-[1.8vw] md:text-[14px] rounded-md font-bold hover:bg-[#00f0ff] hover:text-black transition-colors shadow-[0_0_10px_rgba(0,240,255,0.3)] whitespace-nowrap inline-block text-center cursor-pointer">
-            Get Started
-          </a>
-        </nav>
-
-        {/* Hero Section */}
-        <div className="flex flex-col items-center text-center mt-[0vh]">
-          <h1 className="font-heading font-black text-[7.5vw] md:text-[60px] leading-[1.1] tracking-wide whitespace-nowrap" style={{ textShadow: "0px 4px 15px rgba(0, 0, 0, 0.8)" }}>
-            <span className="text-white">BECOME A FULL STACK</span>
-            <br />
-            <span className="text-[#00f0ff] font-black drop-shadow-[0_0_12px_rgba(0,240,255,0.4)]">WEB DEVELOPER</span>
-          </h1>
-          <h2 className="font-display mt-[1vh] text-[#ffea00] font-bold text-[3.2vw] md:text-[18px] tracking-widest drop-shadow-md whitespace-nowrap uppercase">
-            LEARN HTML, CSS & JAVASCRIPT
-          </h2>
-          
-          <div className="mt-[2vh] flex flex-row items-end justify-center gap-[4vw] md:gap-[30px] w-full">
-            <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="block bg-[#00f0ff] text-black font-bold px-[6vw] md:px-[30px] py-[1vh] md:py-[10px] text-[3vw] md:text-[15px] rounded-md tracking-widest border border-[#00f0ff] shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-white hover:border-white transition-colors whitespace-nowrap text-center cursor-pointer mb-[2px]">
-              GET STARTED
+        {/* Top Group: Navbar + Hero (forces them close together) */}
+        <div className="flex flex-col w-full">
+          {/* Navbar */}
+          <nav className="flex items-center justify-between w-full h-[6dvh] md:h-[5vh]">
+            <button onClick={() => window.location.reload()} className="font-mono text-[#00f0ff] font-black italic text-[2.8vw] md:text-[18px] tracking-widest drop-shadow-[0_0_8px_rgba(0,240,255,0.8)] whitespace-nowrap hover:scale-105 transition-transform cursor-pointer bg-transparent border-none">
+              &lt;CODE MASTER&gt;
+            </button>
+            {/* Nav Links preserved but shrunk on mobile to keep layout identical */}
+            <div className="flex items-center space-x-[2vw] md:space-x-[40px] text-[1.8vw] md:text-[16px] font-medium text-gray-100 whitespace-nowrap">
+              <button onClick={() => window.location.reload()} className="hover:text-[#00f0ff] transition-colors cursor-pointer bg-transparent border-none">Home</button>
+              <a href="https://www.codecademy.com/coaching" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">Courses</a>
+              <a href="https://www.getverse.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">About</a>
+              <a href="https://t.me/GetVerse/486213" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">Contact</a>
+            </div>
+            <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="border-[1.5px] md:border-[2px] border-[#00f0ff] text-[#00f0ff] px-[2.5vw] md:px-[24px] py-[0.6dvh] md:py-[8px] text-[1.8vw] md:text-[14px] rounded-md font-bold hover:bg-[#00f0ff] hover:text-black transition-colors shadow-[0_0_10px_rgba(0,240,255,0.3)] whitespace-nowrap inline-block text-center cursor-pointer">
+              Get Started
             </a>
+          </nav>
+
+          {/* Hero Section */}
+          <div className="flex flex-col items-center text-center mt-[1.5vh] md:mt-[3vh]">
+            <h1 className="font-heading font-black text-[7.5vw] md:text-[60px] leading-[1.1] tracking-wide whitespace-nowrap" style={{ textShadow: "0px 4px 15px rgba(0, 0, 0, 0.8)" }}>
+              <span className="text-white">BECOME A FULL STACK</span>
+              <br />
+              <span className="text-[#00f0ff] font-black drop-shadow-[0_0_12px_rgba(0,240,255,0.4)]">WEB DEVELOPER</span>
+            </h1>
+            <h2 className="font-display mt-[1vh] text-[#ffea00] font-bold text-[3.2vw] md:text-[18px] tracking-widest drop-shadow-md whitespace-nowrap uppercase">
+              LEARN HTML, CSS & JAVASCRIPT
+            </h2>
             
-            <div className="flex flex-col space-y-[0.5vh] md:space-y-[8px] text-[2vw] md:text-[13px] font-bold tracking-widest text-left whitespace-nowrap">
-              {['FRONT-END & BACK-END', 'BEGINNER TO ADVANCED', 'BUILD REAL WORLD PROJECTS'].map((text, i) => (
-                <div key={i} className="flex items-center space-x-[1.5vw] md:space-x-[10px]">
-                  <Check className="text-[#00f0ff] w-[3vw] h-[3vw] md:w-[14px] md:h-[14px] drop-shadow-[0_0_5px_rgba(0,240,255,1)] flex-shrink-0" strokeWidth={4} />
-                  <span className="drop-shadow-md">{text}</span>
-                </div>
-              ))}
+            <div className="mt-[2vh] flex flex-row items-end justify-center gap-[4vw] md:gap-[30px] w-full">
+              <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="block bg-[#00f0ff] text-black font-bold px-[6vw] md:px-[30px] py-[1vh] md:py-[10px] text-[3vw] md:text-[15px] rounded-md tracking-widest border border-[#00f0ff] shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-white hover:border-white transition-colors whitespace-nowrap text-center cursor-pointer mb-[2px]">
+                GET STARTED
+              </a>
+              
+              <div className="flex flex-col space-y-[0.5vh] md:space-y-[8px] text-[2vw] md:text-[13px] font-bold tracking-widest text-left whitespace-nowrap">
+                {['FRONT-END & BACK-END', 'BEGINNER TO ADVANCED', 'BUILD REAL WORLD PROJECTS'].map((text, i) => (
+                  <div key={i} className="flex items-center space-x-[1.5vw] md:space-x-[10px]">
+                    <Check className="text-[#00f0ff] w-[3vw] h-[3vw] md:w-[14px] md:h-[14px] drop-shadow-[0_0_5px_rgba(0,240,255,1)] flex-shrink-0" strokeWidth={4} />
+                    <span className="drop-shadow-md">{text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
