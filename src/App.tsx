@@ -33,7 +33,7 @@ export default function App() {
       </div>
 
       {/* Content wrapper - Fixed height with extreme tight flex to fit one screen */}
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-evenly h-[100dvh] py-[1vh] px-[2vw] md:px-[4vw]">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-between h-[100dvh] pt-[1vh] pb-[2vh] px-[2vw] md:px-[4vw]">
         
         {/* Navbar */}
         <nav className="flex items-center justify-between w-full h-[6dvh] md:h-[5vh]">
