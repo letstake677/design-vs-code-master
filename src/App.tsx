@@ -54,7 +54,7 @@ export default function App() {
 
         {/* Hero Section */}
         <div className="flex flex-col items-center text-center mt-[0vh]">
-          <h1 className="font-heading font-black text-[7.5vw] md:text-[44px] leading-[1.1] tracking-wide whitespace-nowrap" style={{ textShadow: "0px 4px 15px rgba(0, 0, 0, 0.8)" }}>
+          <h1 className="font-heading font-black text-[7.5vw] md:text-[60px] leading-[1.1] tracking-wide whitespace-nowrap" style={{ textShadow: "0px 4px 15px rgba(0, 0, 0, 0.8)" }}>
             <span className="text-white">BECOME A FULL STACK</span>
             <br />
             <span className="text-[#00f0ff] font-black drop-shadow-[0_0_12px_rgba(0,240,255,0.4)]">WEB DEVELOPER</span>
