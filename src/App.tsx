@@ -33,7 +33,7 @@ export default function App() {
       </div>
 
       {/* Content wrapper - Fixed height with extreme tight flex to fit one screen */}
-      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-between h-[100dvh] pt-[0.5dvh] pb-[1.5dvh] px-[2vw] md:px-[4vw]">
+      <div className="relative z-10 w-full max-w-[1200px] mx-auto flex flex-col justify-evenly h-[100dvh] py-[1vh] px-[2vw] md:px-[4vw]">
         
         {/* Navbar */}
         <nav className="flex items-center justify-between w-full h-[6dvh] md:h-[5vh]">
@@ -47,7 +47,7 @@ export default function App() {
             <a href="https://www.getverse.com/" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">About</a>
             <a href="https://t.me/GetVerse/486213" target="_blank" rel="noopener noreferrer" className="hover:text-[#00f0ff] transition-colors">Contact</a>
           </div>
-          <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="border-[1.5px] md:border-[2px] border-[#00f0ff] text-[#00f0ff] px-[2.5vw] md:px-[24px] py-[0.6dvh] md:py-[8px] text-[1.8vw] md:text-[14px] font-bold hover:bg-[#00f0ff] hover:text-black transition-colors shadow-[0_0_10px_rgba(0,240,255,0.3)] whitespace-nowrap inline-block text-center cursor-pointer">
+          <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="border-[1.5px] md:border-[2px] border-[#00f0ff] text-[#00f0ff] px-[2.5vw] md:px-[24px] py-[0.6dvh] md:py-[8px] text-[1.8vw] md:text-[14px] rounded-md font-bold hover:bg-[#00f0ff] hover:text-black transition-colors shadow-[0_0_10px_rgba(0,240,255,0.3)] whitespace-nowrap inline-block text-center cursor-pointer">
             Get Started
           </a>
         </nav>
@@ -63,15 +63,15 @@ export default function App() {
             LEARN HTML, CSS & JAVASCRIPT
           </h2>
           
-          <div className="mt-[2vh] flex flex-row items-center justify-center gap-[4vw] md:gap-[30px] w-full">
-            <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="block bg-[#00f0ff] text-black font-bold px-[6vw] md:px-[30px] py-[1vh] md:py-[12px] text-[3vw] md:text-[15px] tracking-widest border border-[#00f0ff] shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-white hover:border-white transition-colors whitespace-nowrap text-center cursor-pointer">
+          <div className="mt-[2vh] flex flex-row items-end justify-center gap-[4vw] md:gap-[30px] w-full">
+            <a href="https://www.codecademy.com/" target="_blank" rel="noopener noreferrer" className="block bg-[#00f0ff] text-black font-bold px-[6vw] md:px-[30px] py-[1vh] md:py-[10px] text-[3vw] md:text-[15px] rounded-md tracking-widest border border-[#00f0ff] shadow-[0_0_20px_rgba(0,240,255,0.4)] hover:bg-white hover:border-white transition-colors whitespace-nowrap text-center cursor-pointer mb-[2px]">
               GET STARTED
             </a>
             
-            <div className="flex flex-col space-y-[0.5vh] md:space-y-[6px] text-[2vw] md:text-[13px] font-bold tracking-widest text-left whitespace-nowrap">
+            <div className="flex flex-col space-y-[0.5vh] md:space-y-[8px] text-[2vw] md:text-[13px] font-bold tracking-widest text-left whitespace-nowrap">
               {['FRONT-END & BACK-END', 'BEGINNER TO ADVANCED', 'BUILD REAL WORLD PROJECTS'].map((text, i) => (
-                <div key={i} className="flex items-center space-x-[1.5vw] md:space-x-[12px]">
-                  <Check className="text-[#00f0ff] w-[3vw] h-[3vw] md:w-[22px] md:h-[22px] drop-shadow-[0_0_5px_rgba(0,240,255,1)] flex-shrink-0" strokeWidth={4} />
+                <div key={i} className="flex items-center space-x-[1.5vw] md:space-x-[10px]">
+                  <Check className="text-[#00f0ff] w-[3vw] h-[3vw] md:w-[14px] md:h-[14px] drop-shadow-[0_0_5px_rgba(0,240,255,1)] flex-shrink-0" strokeWidth={4} />
                   <span className="drop-shadow-md">{text}</span>
                 </div>
               ))}
@@ -102,11 +102,11 @@ export default function App() {
                   </p>
                 </div>
                 {course.link !== "#" ? (
-                  <a href={course.link} target="_blank" rel="noopener noreferrer" className="block bg-[#00f0ff] text-black font-bold w-full md:w-[85%] py-[0.8vh] md:py-[6px] text-[1.8vw] md:text-[11px] tracking-widest hover:bg-white transition-colors whitespace-nowrap text-center cursor-pointer">
+                  <a href={course.link} target="_blank" rel="noopener noreferrer" className="block bg-[#00f0ff] text-black font-bold w-full md:w-[85%] py-[0.8vh] md:py-[6px] text-[1.8vw] md:text-[11px] rounded-md tracking-widest hover:bg-white transition-colors whitespace-nowrap text-center cursor-pointer">
                     LEARN MORE
                   </a>
                 ) : (
-                  <button className="bg-[#00f0ff] text-black font-bold w-full md:w-[85%] py-[0.8vh] md:py-[6px] text-[1.8vw] md:text-[11px] tracking-widest hover:bg-white transition-colors whitespace-nowrap">
+                  <button className="bg-[#00f0ff] text-black font-bold w-full md:w-[85%] py-[0.8vh] md:py-[6px] text-[1.8vw] md:text-[11px] rounded-md tracking-widest hover:bg-white transition-colors whitespace-nowrap">
                     LEARN MORE
                   </button>
                 )}
@@ -164,17 +164,17 @@ export default function App() {
                     type="email" 
                     required
                     placeholder="Your Email" 
-                    className="w-1/2 px-[3vw] md:px-[16px] py-[0.8vh] md:py-[10px] bg-white text-black text-[2vw] md:text-[13px] outline-none font-medium"
+                    className="w-1/2 px-[3vw] md:px-[16px] py-[0.8vh] md:py-[10px] bg-white rounded-md text-black text-[2vw] md:text-[13px] outline-none font-medium"
                   />
                   <input 
                     type="tel" 
                     required
                     placeholder="Enter Your Phone" 
-                    className="w-1/2 px-[3vw] md:px-[16px] py-[0.8vh] md:py-[10px] bg-white text-black text-[2vw] md:text-[13px] outline-none font-medium"
+                    className="w-1/2 px-[3vw] md:px-[16px] py-[0.8vh] md:py-[10px] bg-white rounded-md text-black text-[2vw] md:text-[13px] outline-none font-medium"
                   />
                 </div>
                 
-                <button type="submit" className="inline-block mt-[1.2vh] md:mt-[14px] bg-[#00f0ff] text-black font-bold px-[8vw] md:px-[30px] py-[1vh] md:py-[12px] text-[3vw] md:text-[16px] tracking-widest shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:bg-white transition-colors whitespace-nowrap text-center cursor-pointer border-none">
+                <button type="submit" className="inline-block mt-[1.2vh] md:mt-[14px] bg-[#00f0ff] text-black font-bold px-[8vw] md:px-[30px] py-[1vh] md:py-[12px] text-[3vw] md:text-[16px] rounded-md tracking-widest shadow-[0_0_20px_rgba(0,240,255,0.5)] hover:bg-white transition-colors whitespace-nowrap text-center cursor-pointer border-none">
                   GET STARTED
                 </button>
               </form>
