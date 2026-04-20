@@ -23,16 +23,14 @@
 }
 
 body {
-  background-color: #05050a;
+  background-color: #050014;
   color: #ffffff;
 }
 
+/* Remove all strict viewport locking */
 html, body, #root {
   width: 100%;
-  height: 100dvh;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  overscroll-behavior: none;
-  touch-action: none; /* Disables all panning and zooming */
+  overflow-x: hidden;
 }
